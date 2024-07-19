@@ -1,9 +1,150 @@
 body{
     margin: 0;
+    font-family: "Inter", sans-serif;
 }
 
+#content{
+    display:ruby;
+}
+
+
 header{
-    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
     width: 100%;
     background-color: #f0544f;
+    padding: 20px 10px 20px 40px;
+}
+
+
+.pokemon-image{
+    height: 180px;
+}
+.pokemon-image:hover{
+transform: scale(1.1)
+}
+
+.pokemon-card{
+    border: solid, 16px, #d5ba35;
+    width: 380px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 16px;
+    padding: 16px 8px 8px 8px;
+    margin: 24px;
+}
+
+.pokemon-card span{
+    width:100%;
+    margin-left: 80px;
+    margin-bottom: 16px;
+    }
+
+.pokemon-image-container{
+    border: solid, #d5ba35;
+    width: 300px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.image-background-grass{
+    background-image: url("./img/grass-texture.jpg");
+
+}
+
+.image-background-fire{
+    background-image: url("./img/fire-texture.jpg");
+
+}
+
+.image-background-water{
+    background-image: url("./img/water-texture.jpg");
+
+}
+
+.image-background-bug{
+    background-image: url("./img/bug-texture.jpg");
+
+}
+
+.image-background-normal{
+    background-image: url("./img/normal-texture.jpg");
+
+}
+
+.image-background-poison{
+    background-image: url("./img/poison-texture.jpg");
+
+}
+
+.image-background-electric{
+    background-image: url("./img/electric-texture.jpg");
+
+}
+
+.image-background-fairy{
+    background-image: url("./img/fairy-texture.jpg");
+
+}
+
+.image-background-ground{
+    background-image: url("./img/ground-texture.jpg");
+
+}
+
+.image-background-ground{
+    background-image: url("./img/ground-texture.jpg");
+
+}
+
+.image-background-fighting{
+    background-image: url("./img/fighting-texture.jpg");
+
+}
+
+.image-background-psychic{
+    background-image: url("./img/psychic-texture.png");
+
+}
+
+.image-background-rock{
+    background-image: url("./img/rock-texture.jpg");
+
+}
+
+.image-background-ghost{
+    background-image: url("./img/ghost-texture.jpg");
+
+}
+
+.image-background-ice{
+    background-image: url("./img/ice-texture.jpg");
+
+}
+
+.image-background-dragon{
+    background-image: url("./img/dragon-texture.jpg");
+
+}
+
+.image-background-dark{
+    background-image: url("./img/dark-texture.jpg");
+
+}
+
+.image-background-steel{
+    background-image: url("./img/steel-texture.jpg");
+
+}
+
+.image-background-flying{
+    background-image: url("./img/flying-texture.jpg");
+
 }

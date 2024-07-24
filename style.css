@@ -3,7 +3,7 @@ body{
     font-family: "Inter", sans-serif;
 }
 
-#content{
+#pokemon-container{
     display:ruby;
 }
 
@@ -19,11 +19,17 @@ header{
 }
 
 
+section{
+    display: flex;
+    flex-direction: column;
+}
+
 .pokemon-image{
     height: 180px;
 }
 .pokemon-image:hover{
-transform: scale(1.1)
+transform: scale(1.1);
+cursor: pointer;
 }
 
 .pokemon-card{
@@ -38,11 +44,29 @@ transform: scale(1.1)
     margin: 24px;
 }
 
-.pokemon-card span{
-    width:100%;
-    margin-left: 80px;
-    margin-bottom: 16px;
+.caught-image{
+    height: 40px;
+}
+
+.caught-image:hover{
+    cursor: pointer;
+}
+.grey{
+filter: grayscale(1);
+
+}
+
+    .header-for-card{
+    width: 300px;
+       padding-left: 80px;
+       padding-right: 80px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 8px;
+        
     }
+
+
 
 .pokemon-image-container{
     border: solid, #d5ba35;
@@ -146,5 +170,95 @@ transform: scale(1.1)
 
 .image-background-flying{
     background-image: url("./img/flying-texture.jpg");
+
+}
+
+
+.card-background-grass{
+    background-color: #5dc655;
+}
+
+.card-background-fire{
+    background-color: #e02723;
+
+}
+
+.card-background-water{
+    background-color: #2382e0;
+
+}
+
+.card-background-bug{
+    background-color: #485e36;
+
+}
+
+.card-background-normal{
+    background-color: #f0f2ba;
+
+}
+
+.card-background-poison{
+    background-color: #4e37ce;
+
+}
+
+.card-background-electric{
+    background-color: #f9f45c;
+
+}
+
+.card-background-fairy{
+    background-color: #f4b0e9 ;
+
+}
+
+.card-background-ground{
+    background-color: #826c48;
+
+}
+
+.card-background-fighting{
+    background-color: #ff8000;
+
+}
+
+.card-background-psychic{
+    background-color: #f95cf2;
+
+}
+
+.card-background-rock{
+    background-color: #98a09e;
+
+}
+
+.card-background-ghost{
+    background-color: #38393d;
+
+}
+
+.card-background-ice{
+    background-color: #a2e4f2;
+
+}
+
+.card-background-dragon{
+    background-color: #a0198e;
+
+}
+
+.card-background-dark{
+    background-color: #7d4b8c;
+
+}
+
+.card-background-steel{
+    background-color: #e2e2e2;
+
+}
+
+.card-background-flying{
+    background-color: #4bbfed;
 
 }

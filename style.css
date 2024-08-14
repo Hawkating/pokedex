@@ -7,6 +7,56 @@ body{
     display:ruby;
 }
 
+.d-none{
+    display: none !important;
+}
+
+.loading-spinner{
+    height: 280px;
+
+}
+
+.rotate{
+    animation: spinner 1.5s linear infinite; 
+  }
+  @keyframes spinner {
+    to { transform: rotate(360deg); }
+  }
+
+.dialog-bg{
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dialog-bg span{
+    font-weight: 800;
+    width: 150px;
+    text-align: center;
+    border-radius: 16px;
+    background-color: #ffce31;
+}
+
+#evolution-area{
+    z-index: 110;
+    width: 80%;
+    height: 80%;
+    background-color: #ffce31;
+    border-radius: 16px;
+    border: solid #31319a;
+    display: ruby;
+
+}
 
 header{
     display: flex;
@@ -51,21 +101,27 @@ cursor: pointer;
 .caught-image:hover{
     cursor: pointer;
 }
+
+
 .grey{
 filter: grayscale(1);
-
 }
 
-    .header-for-card{
-    width: 300px;
-       padding-left: 80px;
-       padding-right: 80px;
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 8px;
-        
-    }
 
+.header-for-card{
+    width: 300px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.header-for-card h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
 
 
 .pokemon-image-container{
@@ -76,6 +132,161 @@ filter: grayscale(1);
     justify-content: center;
     align-items: center;
     border-radius: 16px;
+}
+
+
+.close-chain{
+    width: 200px;
+    background-color: #f0544f;
+    box-shadow: 5px 3px #888888;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.close-chain:hover{
+    cursor: pointer;
+    filter: brightness(1.2);  
+}
+
+.catch-area{
+    display: flex;
+    position: relative;
+    bottom: 0px;
+    align-items: center;
+    width:100%;
+    justify-content: flex-end;
+}
+
+.types-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 16px;
+    width: 140px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 16px;
+    box-shadow: 12px 12px 29px #555;;
+}
+
+.weight-height{
+    margin-top: 16px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #38393d solid 1px;
+}
+
+.evolution-chain{
+    width: 290px;
+    background-color: #f0544f;
+    box-shadow: 5px 3px #888888;
+    border-radius: 8px;
+}
+
+.evolution-chain:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+.type-pic{
+    height: 40px;
+}
+.weight-height span{
+    font-weight: bold;
+    }
+
+.card-ability-area{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    height: 80px;
+    width: 100%;
+    text-align: left;
+    
+
+}
+.card-ability-area span{
+    margin: 0;
+}
+.card-ability-area p{
+    margin: 0;
+}
+
+.card-bottom-area{
+    display:flex;
+    align-items: center;
+
+}
+
+#showMyPokemon{
+    background-color:#f0544f;
+    text-align: center;
+    border-radius: 15px;
+    width: 200px;
+    margin: 16px;
+    box-shadow: 5px 3px #888888;
+}
+
+#showMyPokemon:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+#showAll{
+    background-color:#f0544f;
+    text-align: center;
+    border-radius: 15px;
+    width: 200px;
+    margin: 16px;
+    box-shadow: 5px 3px #888888;
+}
+
+#showAll:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+
+.filter-section{
+    padding-top: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-section button{
+    margin-left: 8px;
+    background-color:#f0544f;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 5px 3px #888888;
+}
+
+.filter-section button:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+
+
+
+.load-more-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.load-more-area button{
+    margin: 24px;
+    background-color: #f0544f;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 5px 3px #888888;
+}
+
+.load-more-area button:hover{
+    cursor: pointer;
+    filter: brightness(1.2);
 }
 
 .image-background-grass{
